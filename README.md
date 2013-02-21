@@ -66,14 +66,14 @@ Evaluation Criteria
 Getting Started
 ---------------
 
-### Fork the project on GitHub
+### Clone the project to your local machine
 
 You are probably reading this on GitHub already.  If not, you can find the
 project [on GitHub](https://www.github.com/wyndhamjade/interview-test-java).
 
-To begin work on the project, start by forking the project on GitHub into
-your own GitHub repository and then cloning that repository to your local
-machine.
+To begin work on the project, start by cloning the repository to your local
+machine.  Do your work locally, committing your changes to your local git
+repository as you go.
 
 
 ### Building the project
@@ -130,7 +130,14 @@ database.
 Submitting Your Code For Evaluation
 -----------------------------------
 
-When you are finished and ready to submit your work, first push all your
-changes up to the GitHub repository.  Then, use GitHub to open a pull
-request.  This will notify us that your project is ready for review.
+When you are finished and ready to submit your work, use the following
+command to generate a series of patch files with all of your changes:
+
+    git format-patch origin/master
+
+This will create one or more numbered patch files.
+
+Send an email with the patch files attached to the person who sent you this
+test.  If you have git set up to send email, you may also use the `git
+send-email` command to do this.
 
